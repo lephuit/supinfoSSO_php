@@ -55,7 +55,7 @@ if ($_POST['openid_action'] == "login"){ // Get identity from user and redirect 
 
 <div>
 	<?php
-	print_r($_GET);
+	var_dump($_GET);
 	if(isset($_GET['openid_identity']))
 	{
 		$response = new ssoResponse;
@@ -82,7 +82,7 @@ if ($_POST['openid_action'] == "login"){ // Get identity from user and redirect 
 	?>
 	<fieldset id="openid">
 		<legend>CampusID</legend>
-		<form action="<?echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["SCRIPT_NAME"]; ?>" method="post">
+		<form action="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["SCRIPT_NAME"]; ?>" method="post">
 		<input type="hidden" name="openid_action" value="login">
 			<div>
 				<input type="text" name="openid_url" class="openid_login">

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
  * SSO_Supinfo_PHP V1.0 
  * Auteurs : HUYNH Eddy <Eddy.HUYNH@supinfo.com> et CHEVALIER Alexis <Alexis.CHEVALIER@supinfo.com>
